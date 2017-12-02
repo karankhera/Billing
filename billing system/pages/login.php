@@ -11,7 +11,7 @@ if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());
 }
 
-$sql = "SELECT * FROM store_info WHERE email='".$userid."' AND password='".$pass."'" ;
+$sql = "SELECT * FROM store_info WHERE email='".$userid."' AND pass='".$pass."'" ;
 $query=mysqli_query($conn, $sql);
 if ($query) 
 {

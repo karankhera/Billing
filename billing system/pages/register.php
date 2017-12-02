@@ -17,7 +17,7 @@ $sql="INSERT into store_info (uid, name, email, mobno, pass) VALUES ('".$uid."',
 
 if (mysqli_query($conn, $sql)) 
 {
-    header("location:register_success.html");
+    header("location:../index.php");
 }
 else
 {

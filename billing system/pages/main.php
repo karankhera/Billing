@@ -23,7 +23,7 @@ session_start();
 </div>
 
 <div class="main">
-	<h2 style="float: left; display: inline-block;">Store Name</h2>
+	<h2 style="float: left; display: inline-block;"><?php echo $_SESSION["name"];?></h2>
 	<h4 style="float: right; display: inline-block;"><a href="logout.php">LogOut</a></h4>
 	<form action="bill.php" method="POST">
 		<input type="text" name="customer_email" class="txt-sml2" placeholder="Customer Email" required>
